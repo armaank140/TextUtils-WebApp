@@ -29,19 +29,19 @@ function App() {
       document.body.style.backgroundColor = '#042743';
       settoggleText('Enable LightMode')
       showAlert("DarkMode has been Enabled","success")
-      document.title = ("TestUtils - DarktMode");
+      document.title = ("TextUtils - DarktMode");
     }
     else{
       setmod('light')
       document.body.style.backgroundColor = 'white';
       settoggleText('Enable DarkMode')
       showAlert("LightMode has been Enabled","success")
-      document.title = ("TestUtils - LightMode");
+      document.title = ("TextUtils - LightMode");
 
     }
   } 
 
-  // git first commit
+  
   return (
     <>
         <Navbar title = "TextUtils"  mode={mode}  toggleMode={toggleMode} toggleText={toggleText} />
