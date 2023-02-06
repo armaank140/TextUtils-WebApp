@@ -38,11 +38,10 @@ function App() {
       showAlert("LightMode has been Enabled","success")
       document.title = ("TestUtils - LightMode");
 
-
-
-
     }
   } 
+
+  // git first commit
   return (
     <>
         <Navbar title = "TextUtils"  mode={mode}  toggleMode={toggleMode} toggleText={toggleText} />
