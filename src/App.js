@@ -20,7 +20,7 @@ function App() {
                    })
         setTimeout(()=>{
                    setAlert(null);
-                   },1200);
+                   },1300);
 }
 
   const toggleMode =()=>{
@@ -41,7 +41,7 @@ function App() {
     }
   } 
 
-  
+     
   return (
     <>
         <Navbar title = "TextUtils"  mode={mode}  toggleMode={toggleMode} toggleText={toggleText} />
