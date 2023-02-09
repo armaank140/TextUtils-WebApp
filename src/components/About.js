@@ -40,39 +40,55 @@ export default function About() {
         <div className="accordion-item" style={myStyle}>
             <h2 className="accordion-header" id="headingOne">
             <button className="accordion-button" type="button"  style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
+            Q: What is Text Utils?
             </button>
             </h2>
             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>A:</strong> Text Utils is a web application designed to simplify text editing and formatting tasks.
             </div>
             </div>
         </div>
+
         <div className="accordion-item" style={myStyle}>
             <h2 className="accordion-header" id="headingTwo">
             <button className="accordion-button collapsed" style={myStyle}  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+            Q: What kind of operations can be performed with Text Utils?
             </button>
             </h2>
             <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>A:</strong> Text Utils allows users to perform various operations such as text formatting, case conversion, and text manipulations such as removing duplicates, sorting, and more.
             </div>
             </div>
         </div>
+
         <div className="accordion-item" style={myStyle}>
             <h2 className="accordion-header" id="headingThree">
             <button className="accordion-button collapsed"  style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+            Q: Who is Text Utils for?
             </button>
             </h2>
             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>A:</strong> Text Utils is for anyone who needs to quickly and easily format or manipulate text for various purposes, such as cleaning up data for analysis or formatting copy for publishing.
             </div>
             </div>
         </div>
+
+        {/* <div className="accordion-item" style={myStyle}>
+            <h2 className="accordion-header" id="headingTwo">
+            <button className="accordion-button collapsed" style={myStyle}  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Q: Is Text Utils user-friendly?
+            </button>
+            </h2>
+            <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div className="accordion-body">
+                <strong>A:</strong> Yes, Text Utils has a user-friendly interface that makes it easy for users to perform various operations.
+            </div>
+            </div>
+        </div> */}
+
         </div>
         <div className='container'>
         <button type="button"  onClick={toggleStyle} className="btn btn-primary my-2" >{btnText}</button>

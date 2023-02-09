@@ -1,7 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 export default function Navbar(props) {
+
+  const handleOnclick =()=>{
+    props.toggleMode()
+    props.toggleStyle()
+  }
 
   
   return (
@@ -15,18 +21,15 @@ export default function Navbar(props) {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href='/'>Home</a>
+                    <Link className="nav-link active" aria-current="page" to='/'>Home</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href='/'>Product</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href='/'>About Us</a>
+                    <Link className="nav-link" to="/about">About Us</Link>
                   </li>
                 </ul>        
              </div>
              <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
-                    <input className="form-check-input" onClick={props.toggleMode} type="checkbox" id="flexSwitchCheckDefault"/>
+                    <input className="form-check-input" onClick={handleOnclick} type="checkbox" id="flexSwitchCheckDefault"/>
                     <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.toggleText}</label>
               </div> 
         </div>  
