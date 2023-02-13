@@ -1,37 +1,15 @@
-import React, {useState} from 'react'
+import React from 'react'
 
-export default function About() {
+export default function About(props) {
 
-     const [myStyle, setMyStyle] = useState({
-        color: 'black',
-        backgroundColor: 'white'
- })
- const [btnText, setBtnText] = useState("Enable Dark Mode")
+    //  const [myStyle, setMyStyle] = useState({
+    //     color: 'black',
+    //     backgroundColor: 'white'
 
- const toggleStyle = ()=>{
-    if(myStyle.color ==='black'){
-        setMyStyle({
-
-            color: 'white',
-            backgroundColor: 'black',
-            border: '1px solid white'
-
-        })
-        setBtnText("Enable Light mode")
+    let myStyle = {
+        color: props.mode === 'dark'?'white':'black',
+        backgroundColor: props.mode === 'dark'? 'black' :'white'
     }
-    else{
-        setMyStyle({
-
-            color: 'black',
-            backgroundColor: 'white'
-
-        })
-        setBtnText("Enable Dark mode")
-
-
-    }
- }
-        
 
   return (
             <div className='container my-3' style={myStyle}>
@@ -39,7 +17,7 @@ export default function About() {
             <div className="accordion" id="accordionExample" >
         <div className="accordion-item" style={myStyle}>
             <h2 className="accordion-header" id="headingOne">
-            <button className="accordion-button" type="button"  style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button className="accordion-button" type="button"  style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
             Q: What is Text Utils?
             </button>
             </h2>
@@ -90,9 +68,7 @@ export default function About() {
         </div> */}
 
         </div>
-        <div className='container'>
-        <button type="button"  onClick={toggleStyle} className="btn btn-primary my-2" >{btnText}</button>
-        </div>
+       
     </div>
   )
 }
